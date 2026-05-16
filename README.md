@@ -32,7 +32,7 @@ conclusion is computed from results and guarded by `assert` checks.
 |------|---------|
 | `notebook00a7a8e509.ipynb` | Main analysis notebook (runs end-to-end; results + figures embedded) |
 | `Seizure_Prediction_Report_IEEE.docx` | IEEE-format report |
-| `SeizurePredictioReport.pdf` | Report (PDF) |
+| `SeizurePredictionReport.pdf` | Report (PDF) |
 | `SeizurePredictionPresentation.pptx` | Presentation deck (9 slides) |
 | `figures/` | Generated figures (PNG) |
 
