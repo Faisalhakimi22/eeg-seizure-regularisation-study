@@ -32,24 +32,19 @@ conclusion is computed from results and guarded by `assert` checks.
 |------|---------|
 | `notebook00a7a8e509.ipynb` | Main analysis notebook (runs end-to-end; results + figures embedded) |
 | `Seizure_Prediction_Report_IEEE.docx` | IEEE-format report |
-| `Seizure_Prediction_Presentation.pptx` | Presentation deck (9 slides) |
+| `SeizurePredictioReport.pdf` | Report (PDF) |
+| `SeizurePredictionPresentation.pptx` | Presentation deck (9 slides) |
 | `figures/` | Generated figures (PNG) |
-| `build_notebook.py` | Regenerates the notebook |
-| `make_report.py` | Recomputes metrics → `results.json` |
-| `gen_docx.py` / `gen_pptx.py` | Build the report / presentation from `results.json` |
 
 ## How to run
 
 Requires Python 3.11+ and internet access (no Kaggle credentials needed).
 
 ```bash
-pip install numpy pandas scikit-learn imbalanced-learn matplotlib seaborn kagglehub nbconvert python-docx python-pptx
+pip install numpy pandas scikit-learn imbalanced-learn matplotlib seaborn kagglehub nbconvert
 
 # Execute the notebook end-to-end
 python -m nbconvert --to notebook --execute --inplace notebook00a7a8e509.ipynb
-
-# (optional) regenerate report + presentation
-python make_report.py && python gen_docx.py && python gen_pptx.py
 ```
 
 > The notebook downloads data at runtime; it needs internet on a clean run.
